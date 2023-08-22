@@ -1,0 +1,14 @@
+.button{
+    padding: 10px 20px ;
+    width: max-content;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 0 3px 3px yellow;
+    background-color: #F0F;
+    font-size: 16px;font-weight: bold;
+    margin-right: 10px;
+}
+
+.notDisplay{
+    display: none;
+}

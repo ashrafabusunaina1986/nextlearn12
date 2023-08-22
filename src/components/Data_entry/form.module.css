@@ -1,0 +1,35 @@
+.form{
+    width: 100%;
+    margin: 30px auto 5px auto ;
+    border: none;
+    padding: 30px;
+}
+
+.entry{
+    width: inherit;
+    display: flex;
+    align-items: normal;
+    flex-flow: wrap;
+    gap: 20px;
+    margin: 20px auto;
+}
+.entry input,.entry textarea{
+    border: none;
+    box-shadow: 0 0 3px 3px #222;
+    background: none;
+    padding: 5px 10px;
+}
+.entry textarea{
+    width: 560px;
+    height: 100px;
+}
+.entry input{
+    width: 100%;
+}
+.entry input::placeholder,.entry input[type='date']{
+    color: #568;
+}
+
+.notDisplay{
+    display: none;
+}
