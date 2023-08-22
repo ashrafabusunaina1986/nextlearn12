@@ -11,6 +11,7 @@ html,body{
 }
 
 .container{
+  text-align: center;
   width: 90%;
   min-height: 100vh;
   box-shadow:  0 0 5px 10px #456;
