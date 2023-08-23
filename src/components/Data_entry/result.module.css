@@ -3,6 +3,7 @@
     width: 96%;
     background-color: #999;
     margin:  auto;
+    padding-top: 10px;
 }
 .notDisplay{
     display: none;
@@ -41,4 +42,27 @@
     font-size: 14px;
     font-weight: 500;
     text-align: justify;
+}
+
+.filter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px ;
+    border: 1px solid #455
+}
+.filter h1{
+    font-size: 14px;
+    font-weight: bold;
+    color: #815;
+}
+
+.filter select{
+    width: max-content;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #999;
+    border-radius: 10px ;
+    padding: 10px 20px;
+    box-shadow: 0 0 3px 5px #815;
 }

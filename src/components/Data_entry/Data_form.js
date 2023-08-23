@@ -21,9 +21,9 @@ function Data_form(props) {
       setIsActive(prev => !isActive)
     } else if (title === 'Add Item') {
       setIsActive(prev => !isActive)
-        input.name === '' || input.date === ''
-          || input.email === ''
-          || input.message === ''
+      input.name === '' || input.date === ''
+        || input.email === ''
+        || input.message === ''
         || !isActive ? ''
         :
         props.setData([

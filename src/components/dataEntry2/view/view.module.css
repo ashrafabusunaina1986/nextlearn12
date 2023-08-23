@@ -1,0 +1,12 @@
+.container{
+    margin: 50px auto;
+    border: 1px solid#ccc;
+    padding: 10px;
+}
+.goal{
+    width: 500px;
+    background-color: red;
+    padding: 10px;
+    border: 0.1 solid #aaa;
+    margin: 10px auto;
+}
