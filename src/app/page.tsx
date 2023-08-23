@@ -17,6 +17,11 @@ const shapes=[
     id:3,
     title:"Data entry 2",
     url:"/data_entry2"
+  },
+  {
+    id:4,
+    title:"Style components",
+    url:"/Buttons"
   }
 ]
 
