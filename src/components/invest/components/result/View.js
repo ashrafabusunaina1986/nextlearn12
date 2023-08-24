@@ -16,8 +16,8 @@ function View(props) {
       </thead>
       <tbody>
         {
-          yearlyData.map(yd => {
-            return <tr>
+          yearlyData.map((yd,ind) => {
+            return <tr key={ind}>
               <td>{yd.year}</td>
               <td>{yd.savingsEndOfYear}</td>
               <td>{yd.yearlyInterest}</td>
