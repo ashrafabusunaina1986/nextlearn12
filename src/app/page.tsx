@@ -22,6 +22,11 @@ const shapes=[
     id:4,
     title:"Style components",
     url:"/Buttons"
+  },
+  {
+    id:5,
+    title:"Invest",
+    url:"/invest"
   }
 ]
 

@@ -19,7 +19,7 @@ const StyleForm = styled.form`
       color: ${(props) => {
     const goal = props.goal
     const isActive=props.isActive
-    return  goal === '' && isActive? 'red' : 'black'
+    return  goal === '' && !isActive? 'red' : 'black'
   }};
     }
 
@@ -33,7 +33,7 @@ const StyleForm = styled.form`
       background-color:${(props) => {
         const isActive=props.isActive
         const goal = props.goal
-        return goal === '' && isActive? '#f88' : '#fff'
+        return goal === '' && !isActive? '#f88' : '#fff'
   }}; 
       width: 500px;
       padding: 10px;
@@ -44,11 +44,11 @@ const StyleForm = styled.form`
 
 function Form(props) {
   const [goal, setGoal] = useState('')
-  const [isActive,setIsActive]=useState(false)
+  const [isActive,setIsActive]=useState(true)
   const addHandler = (e) => {
     e.preventDefault()
-    if (goal ==='') {
-      setIsActive(true)
+    if (goal.trim().length===0) {
+      setIsActive(false)
     } else {
       setIsActive(true)
       props.setData([
