@@ -27,6 +27,11 @@ const shapes=[
     id:5,
     title:"Invest",
     url:"/invest"
+  },
+  {
+    id:6,
+    title:"Add Users",
+    url:"/addUsers"
   }
 ]
 

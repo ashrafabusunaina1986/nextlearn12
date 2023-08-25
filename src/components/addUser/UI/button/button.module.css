@@ -1,0 +1,9 @@
+.button{
+    max-width: max-content;
+    padding: 10px 20px ;
+    background-color: rgb(1, 1, 110);
+    color: #fef;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;font-weight: bold;
+}
