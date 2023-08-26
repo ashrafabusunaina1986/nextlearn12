@@ -4,3 +4,6 @@
     margin: 30px auto;
     width: 80%;
 }
+.content{
+    display: flex;gap: 10px;
+}

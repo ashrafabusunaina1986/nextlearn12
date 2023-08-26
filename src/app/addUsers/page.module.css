@@ -1,4 +1,10 @@
 .container{
     background-color: #101010;
     min-height: 100vh;
+    width: 80%;
+}
+
+.content{
+    display: flex;
+    gap: 10px;
 }

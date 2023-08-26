@@ -1,20 +1,22 @@
 'use client'
 import React from 'react'
-import { ThemeProvider,createGlobalStyle } from 'styled-components'
-import Button, { FancyButton ,TypeButton,Animate,ThemeButton} from '../../components/styleButton/Button'
+import { ThemeProvider, createGlobalStyle } from 'styled-components'
+import styles from './page.module.css'
+import Addresses from '@/components/addresses/Addresses'
+import Button, { FancyButton, TypeButton, Animate, ThemeButton } from '../../components/styleButton/Button'
 
-const theme={
-    dark:{
-        primary:'#000',
-        text:'#fff'
+const theme = {
+    dark: {
+        primary: '#000',
+        text: '#fff'
     },
-    light:{
-        primary:'#fff',
-        text:'#000'
+    light: {
+        primary: '#fff',
+        text: '#000'
     }
 }
 
-const GlobalStyle=createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
     button{
         border-radius: 10px;
         background: linear-gradient(to top ,#567,#110);
@@ -23,21 +25,28 @@ const GlobalStyle=createGlobalStyle`
 `
 function Buttons() {
     return (
+        <div className={styles.content} >
+            <Addresses />
 
-        <ThemeProvider theme={theme}>
-            <GlobalStyle/>
-            <Button>send</Button>
-            <br /><br />
-            <Button variant='outline'>send</Button>
-            <br /><br />
-            <ThemeButton>Send</ThemeButton>
-            <br /><br />
-            <FancyButton>Send</FancyButton>
-            <br/><br />
-            <TypeButton>Send</TypeButton>
-            <br /><br />
-            <Animate>Send</Animate>
-        </ThemeProvider>
+            <ThemeProvider theme={theme}>
+                <div>
+                    <GlobalStyle />
+                    <Button>send</Button>
+                    <br /><br />
+                    <Button variant='outline'>send</Button>
+                    <br /><br />
+                    <ThemeButton>Send</ThemeButton>
+                    <br /><br />
+                    <FancyButton>Send</FancyButton>
+                    <br /><br />
+                    <TypeButton>Send</TypeButton>
+                    <br /><br />
+                    <Animate>Send</Animate>
+                </div>
+
+            </ThemeProvider>
+
+        </div>
     )
 }
 

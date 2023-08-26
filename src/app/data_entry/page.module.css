@@ -1,7 +1,10 @@
 .container{
     border: 1px solid #567;
     box-shadow: 0 0 5px 5px #444;
-    width: 90%;
+    width: 80%;
     margin: 30px auto;
     background-color: #999;
+}
+.content{
+    display: flex;gap: 10px;
 }
