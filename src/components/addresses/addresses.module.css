@@ -4,15 +4,16 @@
     max-width: 20%;
     height: max-content;
     background-color: rgb(0, 0, 0);
-    padding: 20px 5px;
+    padding: 2% 0.5%;
     border: #444 1px solid;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .links a{
     display: inline-block;
-    padding: 15px 10px;
+    text-align: left;
+    padding: 5% 1%;
     width:105%;
     text-decoration: none;
     color: rgb(255, 255, 255);
