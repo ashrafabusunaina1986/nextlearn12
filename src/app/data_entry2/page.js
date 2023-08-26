@@ -4,11 +4,11 @@ import Data_Entry2 from '@/components/dataEntry2/Data_Entry2'
 
 function DataEntery2() {
   return (
-    <div >
-      <div className={styles.container}>
+    // <div >
+      <div className={styles.content}>
         <Data_Entry2 />
       </div>
-    </div>
+    // </div>
   )
 }
 

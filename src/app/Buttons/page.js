@@ -24,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
 `
 function Buttons() {
     return (
-        <div  >
+        <div className={styles.content} >
 
             <ThemeProvider theme={theme}>
                 <div>

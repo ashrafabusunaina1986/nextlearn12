@@ -4,12 +4,12 @@ import Addusers from '../../components/addUser/Addusers'
 
 function AddUsers() {
   return (
-    <div >
+    // <div >
 
     <div className={styles.container}>
         <Addusers/>
     </div>
-    </div>
+    // </div>
   )
 }
 

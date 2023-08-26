@@ -7,7 +7,7 @@ import Addresses from '@/components/addresses/Addresses'
 function Invest() {
   
   return (
-    <div >
+    <div className={styles.content} >
       <Investt/>
     </div>
   )
