@@ -1,6 +1,6 @@
 .container{
     width: 100%;
-    background-color: #35c28b;
+    background-color: inherit;
     border: none;
     padding: 10px;
 }

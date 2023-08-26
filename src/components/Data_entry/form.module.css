@@ -1,6 +1,6 @@
 .form{
     width: 100%;
-    margin: 30px auto 5px auto ;
+    margin: 30px auto 10px auto ;
     border: none;
     padding: 30px;
 }
@@ -15,16 +15,17 @@
 }
 .entry input,.entry textarea{
     border: none;
-    box-shadow: 0 0 3px 3px #222;
+    box-shadow: 0 0 0.5px 1px #222;
     background: none;
     padding: 5px 10px;
 }
 .entry textarea{
-    width: 560px;
-    height: 100px;
+    width: 780px;
+    height: 200px;
+    resize: none;
 }
 .entry input{
-    width: 100%;
+    width: 250px;
 }
 .entry input::placeholder,.entry input[type='date']{
     color: #568;

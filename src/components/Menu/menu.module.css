@@ -8,17 +8,17 @@
     padding: 15px 20px;
     width: max-content;
     border: none;
-    background: none;
+    background: #eee;
     font-size: 16px;
     font-weight: bold;
-    color: #fff;
+    color: #000;
 }
 
 .item:hover,.item:active{
     border-right: 0.1px solid  #131010;
-    background-color: rgb(223, 229, 235);
+    background-color: #444;
     border-radius: 2px;
-    color: #131010;
+    color: #fff;
     cursor: pointer;
 }
 
@@ -26,11 +26,11 @@
     margin-top: 3px;
     padding: 10px;
     width: 90%;
-    color: rgb(26, 26, 21);
+    color: #000;
     text-align: justify;
     font-size: 14px;
     font-weight: 400;
-    background-color: #fff;
+    background-color: #eee;
     text-indent: 20px;
 }
 .ul{
