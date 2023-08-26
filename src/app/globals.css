@@ -13,8 +13,6 @@ html,body{
 
 
 .container{
-  display: flex;
-  gap: 10px;
   border-radius: 10px;
   text-align: center;
   width: 95%;
@@ -23,4 +21,8 @@ html,body{
   margin: 3px auto;
   color: #e1eeeb;
   background-color: #241c1c;
+}
+.content{
+  display: flex;
+  gap: 10px;
 }
