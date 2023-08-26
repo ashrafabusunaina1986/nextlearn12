@@ -1,9 +1,8 @@
 .container,.content{
-    border: 2px solid #024;
+    border: 0.2px solid #024;
     margin: 10px ;
     width: max-content;
-    box-shadow: 0 0 3px 5px #678;
-}
+    box-shadow: 0 0 0.5px 2px #678;}
 
 .item{
     padding: 15px 20px;
@@ -12,12 +11,14 @@
     background: none;
     font-size: 16px;
     font-weight: bold;
+    color: #fff;
 }
 
 .item:hover,.item:active{
-    border-right: 0.1px solid #024;
-    background-color: #234;
-    color: #aaa;
+    border-right: 0.1px solid  #131010;
+    background-color: rgb(223, 229, 235);
+    border-radius: 2px;
+    color: #131010;
     cursor: pointer;
 }
 
@@ -25,10 +26,12 @@
     margin-top: 3px;
     padding: 10px;
     width: 90%;
-    color: #555;
+    color: rgb(26, 26, 21);
     text-align: justify;
-    font-size: 15px;
-    font-weight: bold;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #fff;
+    text-indent: 20px;
 }
 .ul{
     list-style: none;

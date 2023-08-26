@@ -6,11 +6,6 @@
 }
 
 html,body{
-  background-color: #fff;
-  color: #333;
-  font-family: 'Quicksand', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   /* background-color: #242a28; */
   background: radial-gradient(#303b37, #1a1f1d);
   color: #e1eeeb;
@@ -18,11 +13,14 @@ html,body{
 
 
 .container{
+  display: flex;
+  gap: 10px;
+  border-radius: 10px;
   text-align: center;
-  width: 90%;
+  width: 95%;
   min-height: 100vh;
-  box-shadow:  0 0 5px 10px #456;
-  border: 3px solid #468;
+  box-shadow:  0 0 1px 0.0005px #456;
   margin: 3px auto;
-  background-color: #ddd;
+  color: #e1eeeb;
+  background-color: #241c1c;
 }

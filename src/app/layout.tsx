@@ -1,3 +1,4 @@
+import Addresses from '@/components/addresses/Addresses'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
@@ -19,6 +20,7 @@ export default function RootLayout({
 
       <body className={inter.className}>
         <div className='container'>
+          <Addresses/>
           {children}
         </div>
 

@@ -17,7 +17,7 @@ export default function Home() {
   console.log(show)
   return (
     <main className={styles.container}>
-      <Addresses/>
+      
     </main>
   )
 }

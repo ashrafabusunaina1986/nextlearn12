@@ -2,7 +2,6 @@
 import React from 'react'
 import { ThemeProvider, createGlobalStyle } from 'styled-components'
 import styles from './page.module.css'
-import Addresses from '@/components/addresses/Addresses'
 import Button, { FancyButton, TypeButton, Animate, ThemeButton } from '../../components/styleButton/Button'
 
 const theme = {
@@ -25,8 +24,7 @@ const GlobalStyle = createGlobalStyle`
 `
 function Buttons() {
     return (
-        <div className={styles.content} >
-            <Addresses />
+        <div  >
 
             <ThemeProvider theme={theme}>
                 <div>
