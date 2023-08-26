@@ -2,7 +2,8 @@
     background-color: #101010;
     min-height: max-content;
     margin: auto;
-    width: 98%;
+    width: 78%;
+    max-width: 78%;
     border: 0.1px solid #fff;
 }
 
