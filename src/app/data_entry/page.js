@@ -8,12 +8,12 @@ import Result from '../../components/Data_entry/Result'
 function Data_entry() {
   const [data, setData] = useState([])
   return (
-    <div >
+    // <div >
       <div className={styles.container}>
         <DataEntry setData={setData} data={data} />
         <Result data={data} />
       </div>
-    </div>
+    // {/* </div> */}
 
   )
 }
