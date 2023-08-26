@@ -14,13 +14,15 @@
 }
 .form .not{
     background-color: #f88;
-    width: 500px;
+    width: 95%;
+    max-width: 95%;
     padding: 10px;
     border: 0.1 solid #aaa;
 }
 
 .form .input,.form .button{
-    width: 80%;
+    width: 95%;
+    max-width: 95%;
     background-color: white;
     padding: 10px;
     border: 0.1 solid #aaa;
@@ -28,6 +30,8 @@
 
 .form .button{
     background-color: #f33;
+    width: 95%;
+    max-width: 95%;
 }
 .form .nth{
     color: red;
