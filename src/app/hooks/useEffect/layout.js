@@ -6,6 +6,7 @@ import UseEffect from './page'
 
 function Layout(props) {
 
+
   const [isActive,setIsActive]=useState(false)
   const activeHandler=()=>{
     localStorage.setItem('isLogged','0')
@@ -14,7 +15,7 @@ function Layout(props) {
   useEffect(()=>{
     const isLogged=localStorage.getItem('isLogged')
     isLogged==='1'?setIsActive(true):setIsActive(false)
-  })
+  },[])
   return (
     <div className={styles.layout}>
         <Header auth={isActive} activeHandler={activeHandler}/>

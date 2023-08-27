@@ -5,9 +5,10 @@ import Login from './login/Login'
 import Home from './home/Home'
 
 function Use_effect(props) {
+
   return (
     <div className={styles.container}>
-      {!props.isActive && <Login setIsActive={props.setIsActive}/>}
+      {!props.isActive && <Login setIsActive={props.setIsActive} />}
       {props.isActive && <Home/>}
     </div>
   )
