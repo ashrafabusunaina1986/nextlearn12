@@ -6,7 +6,7 @@ function Button(props) {
     <button onClick={props.addItemHandler}
         className={
           !props.isActive ?
-            styles.button :
+            styles.button +' ' +props.className:
             styles.notDisplay
         } >
         {props.title}

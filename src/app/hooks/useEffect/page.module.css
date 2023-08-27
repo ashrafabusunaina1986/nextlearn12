@@ -1,12 +1,9 @@
-.content{
-    display: flex;gap: 10px;
-}
+
 .container{
     margin: 30px auto;
-    background-color: rgb(241, 241, 241);
+    background-color:inherit;
     color: #070404;
     height: max-content;
     padding: 20px;
-    width: 75%;
-    max-width: 75%;
+    width: 100%;
 }

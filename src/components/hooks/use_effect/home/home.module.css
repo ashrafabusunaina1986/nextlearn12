@@ -1,0 +1,8 @@
+.home{
+    box-shadow: 0 0 3px 3px #555;
+    width: 45%;
+    height: 200px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 3px;
+}

@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(85, 6, 109);
+    padding: 10px;
+}
+
+.logout{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.logout a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 14px;
+    font-weight: bold;
+}
+.button{
+    background-color: rgb(190, 22, 228);
+    color:inherit;
+    border-radius: 1px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
