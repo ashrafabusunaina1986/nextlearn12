@@ -1,5 +1,5 @@
 'use client'
-import React,{} from 'react'
+import React from 'react'
 import styles from './code.module.css'
 import Link from 'next/link'
 

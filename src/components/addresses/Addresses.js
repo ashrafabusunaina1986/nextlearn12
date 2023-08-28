@@ -10,42 +10,42 @@ const shapes = [
     title: "Menu",
     url: "/menu",
     hook: null,
-    code:'https://github.com/ashrafabusunaina1986/nextlearn12/tree/gh-pages/src/app/menu'
+    code: 'https://github.com/ashrafabusunaina1986/nextlearn12/tree/gh-pages/src/app/menu'
   },
   {
     id: 2,
     title: "Data entry",
     url: "/data_entry",
     hook: null,
-    code:'https://github.com/ashrafabusunaina1986/nextlearn12/tree/gh-pages/src/app/data_entry'
+    code: 'https://github.com/ashrafabusunaina1986/nextlearn12/tree/gh-pages/src/app/data_entry'
   },
   {
     id: 3,
     title: "Data entry 2",
     url: "/data_entry2",
     hook: null,
-    code:"https://github.com/ashrafabusunaina1986/nextlearn12/tree/gh-pages/src/app/data_entry2"
+    code: "https://github.com/ashrafabusunaina1986/nextlearn12/tree/gh-pages/src/app/data_entry2"
   },
   {
     id: 4,
     title: "Style components",
     url: "/Buttons",
     hook: null,
-    code:"https://github.com/ashrafabusunaina1986/nextlearn12/tree/gh-pages/src/app/Buttons"
+    code: "https://github.com/ashrafabusunaina1986/nextlearn12/tree/gh-pages/src/app/Buttons"
   },
   {
     id: 5,
     title: "Invest",
     url: "/invest",
     hook: null,
-    code:"https://github.com/ashrafabusunaina1986/nextlearn12/tree/gh-pages/src/app/invest"
+    code: "https://github.com/ashrafabusunaina1986/nextlearn12/tree/gh-pages/src/app/invest"
   },
   {
     id: 6,
     title: "Add Users",
     url: "/addUsers",
     hook: null,
-    code:"https://github.com/ashrafabusunaina1986/nextlearn12/tree/gh-pages/src/app/addUsers"
+    code: "https://github.com/ashrafabusunaina1986/nextlearn12/tree/gh-pages/src/app/addUsers"
   },
   {
     id: 7,
@@ -56,13 +56,13 @@ const shapes = [
         id: 1,
         title: "useEffect",
         url: "/hooks/useEffect",
-        code:"https://github.com/ashrafabusunaina1986/nextlearn12/tree/gh-pages/src/app/hooks/useEffect"
+        code: "https://github.com/ashrafabusunaina1986/nextlearn12/tree/gh-pages/src/app/hooks/useEffect"
       },
       {
         id: 2,
         title: "useReducer",
         url: "/hooks/useReducer",
-        code:"https://github.com/ashrafabusunaina1986/nextlearn12/tree/gh-pages/src/app/hooks/useReducer"
+        code: "https://github.com/ashrafabusunaina1986/nextlearn12/tree/gh-pages/src/app/hooks/useReducer"
       }
     ]
   }
@@ -74,30 +74,31 @@ function Addresses(props) {
       {
         shapes.map(shape => {
           if (shape.hook) {
-            return <Link
-              onClick={() => {
-                setIsActive(true)
-              }}
-              onMouseLeave={()=>{
-                setIsActive(false)
-              }}
-              className={styles.div}
-              key={shape.id}
-              href='#'
-            >
+            return <div key={shape.id}>
+              <Link
+                onClick={() => {
+                  setIsActive(prev => !isActive)
+                }}
+                className={styles.div}
+                key={shape.id}
+                href='#'
+              >
 
-              {isActive ? '- ' + shape.title : '+ ' + shape.title}
+                {isActive ? '- ' + shape.title : '+ ' + shape.title}
+
+              </Link>
               {isActive && <div className={isActive ? styles.subTitle : styles.d}>
-                  {
-                    shape.hook.map(sh => {
-                      return <Link key={sh.id} href={sh.url}>
-                        {'- '+sh.title}
-                      </Link>
-                    })
-                  }
-                </div>
+                {
+                  shape.hook.map(sh => {
+                    return <Link key={sh.id} href={sh.url}>
+                      {'- ' + sh.title}
+                    </Link>
+                  })
+                }
+              </div>
               }
-            </Link>
+            </div>
+
           } else {
             return <Link className={styles.div}
               key={shape.id}
