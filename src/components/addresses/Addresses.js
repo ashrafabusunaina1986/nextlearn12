@@ -67,7 +67,7 @@ function Addresses() {
         shapes.map(shape => {
           if (shape.hook) {
             return <Link
-              onMouseOver={() => {
+              onClick={() => {
                 setIsActive(true)
               }}
               onMouseLeave={()=>{

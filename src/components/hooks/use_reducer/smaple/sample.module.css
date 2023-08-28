@@ -1,0 +1,26 @@
+
+.buttons{
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    justify-content: center;
+    width: 90%;
+    height: max-content;
+}
+.state{
+    box-shadow: 0 0 0.5 1px #000;
+    background-color: rgb(243, 215, 209);
+    padding: 5px 20px ;
+    margin: 0 2px;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+.button{
+    background-color: rgb(192, 93, 68);
+    display: flex;
+    align-items: center;
+    height: 30px;
+    color: #fff;
+    font-size: 14px;font-weight: bold;
+    border: none;
+}

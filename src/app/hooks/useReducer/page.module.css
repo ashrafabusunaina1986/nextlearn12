@@ -1,9 +1,8 @@
 .container{
     margin: 30px auto;
-    background-color: rgb(241, 241, 241);
-    color: #070404;
+    background-color:#fff;
+    color: #101;
     height: max-content;
     padding: 20px;
-    width: 75%;
-    max-width: 75%;
+    width: 80%;
 }
