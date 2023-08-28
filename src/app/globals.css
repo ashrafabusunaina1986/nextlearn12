@@ -25,4 +25,8 @@ html,body{
 .content{
   display: flex;
   gap: 10px;
+  
+}
+.children{
+  width: 100%;
 }

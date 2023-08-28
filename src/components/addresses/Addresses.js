@@ -9,37 +9,43 @@ const shapes = [
     id: 1,
     title: "Menu",
     url: "/menu",
-    hook: null
+    hook: null,
+    code:'https://github.com/ashrafabusunaina1986/nextlearn12/tree/gh-pages/src/app/menu'
   },
   {
     id: 2,
     title: "Data entry",
     url: "/data_entry",
-    hook: null
+    hook: null,
+    code:'https://github.com/ashrafabusunaina1986/nextlearn12/tree/gh-pages/src/app/data_entry'
   },
   {
     id: 3,
     title: "Data entry 2",
     url: "/data_entry2",
-    hook: null
+    hook: null,
+    code:"https://github.com/ashrafabusunaina1986/nextlearn12/tree/gh-pages/src/app/data_entry2"
   },
   {
     id: 4,
     title: "Style components",
     url: "/Buttons",
-    hook: null
+    hook: null,
+    code:"https://github.com/ashrafabusunaina1986/nextlearn12/tree/gh-pages/src/app/Buttons"
   },
   {
     id: 5,
     title: "Invest",
     url: "/invest",
-    hook: null
+    hook: null,
+    code:"https://github.com/ashrafabusunaina1986/nextlearn12/tree/gh-pages/src/app/invest"
   },
   {
     id: 6,
     title: "Add Users",
     url: "/addUsers",
-    hook: null
+    hook: null,
+    code:"https://github.com/ashrafabusunaina1986/nextlearn12/tree/gh-pages/src/app/addUsers"
   },
   {
     id: 7,
@@ -50,16 +56,18 @@ const shapes = [
         id: 1,
         title: "useEffect",
         url: "/hooks/useEffect",
+        code:"https://github.com/ashrafabusunaina1986/nextlearn12/tree/gh-pages/src/app/hooks/useEffect"
       },
       {
         id: 2,
         title: "useReducer",
         url: "/hooks/useReducer",
+        code:"https://github.com/ashrafabusunaina1986/nextlearn12/tree/gh-pages/src/app/hooks/useReducer"
       }
     ]
   }
 ]
-function Addresses() {
+function Addresses(props) {
   const [isActive, setIsActive] = useState(false)
   return (
     <div className={styles.links}>

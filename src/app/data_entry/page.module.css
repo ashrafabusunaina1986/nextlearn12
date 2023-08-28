@@ -1,8 +1,6 @@
 .container{
     box-shadow: 0 0 0.5px 1px #444;
-    min-width: 75%;
-    width: 75%;
-    max-width: 75%;
+    width: 99%;
     height: max-content;
     margin: 10px auto;
     background-color: #eee3e3;
