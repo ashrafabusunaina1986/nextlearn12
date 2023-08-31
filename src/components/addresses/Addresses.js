@@ -1,72 +1,10 @@
 'use client'
 import React, { useState } from 'react'
 import styles from './addresses.module.css'
-
+import shapes from './data.json'
 import Link from 'next/link'
 
-const shapes = [
-  {
-    id: 1,
-    title: "Menu",
-    url: "/menu",
-    hook: null,
-    code: 'https://github.com/ashrafabusunaina1986/nextlearn12/tree/gh-pages/src/app/menu'
-  },
-  {
-    id: 2,
-    title: "Data entry",
-    url: "/data_entry",
-    hook: null,
-    code: 'https://github.com/ashrafabusunaina1986/nextlearn12/tree/gh-pages/src/app/data_entry'
-  },
-  {
-    id: 3,
-    title: "Data entry 2",
-    url: "/data_entry2",
-    hook: null,
-    code: "https://github.com/ashrafabusunaina1986/nextlearn12/tree/gh-pages/src/app/data_entry2"
-  },
-  {
-    id: 4,
-    title: "Style components",
-    url: "/Buttons",
-    hook: null,
-    code: "https://github.com/ashrafabusunaina1986/nextlearn12/tree/gh-pages/src/app/Buttons"
-  },
-  {
-    id: 5,
-    title: "Invest",
-    url: "/invest",
-    hook: null,
-    code: "https://github.com/ashrafabusunaina1986/nextlearn12/tree/gh-pages/src/app/invest"
-  },
-  {
-    id: 6,
-    title: "Add Users",
-    url: "/addUsers",
-    hook: null,
-    code: "https://github.com/ashrafabusunaina1986/nextlearn12/tree/gh-pages/src/app/addUsers"
-  },
-  {
-    id: 7,
-    title: "Use hooks",
-    url: "/hooks",
-    hook: [
-      {
-        id: 1,
-        title: "useEffect",
-        url: "/hooks/useEffect",
-        code: "https://github.com/ashrafabusunaina1986/nextlearn12/tree/gh-pages/src/app/hooks/useEffect"
-      },
-      {
-        id: 2,
-        title: "useReducer",
-        url: "/hooks/useReducer",
-        code: "https://github.com/ashrafabusunaina1986/nextlearn12/tree/gh-pages/src/app/hooks/useReducer"
-      }
-    ]
-  }
-]
+
 function Addresses(props) {
   const [isActive, setIsActive] = useState(false)
   return (
@@ -74,7 +12,7 @@ function Addresses(props) {
       {
         shapes.map(shape => {
           if (shape.hook) {
-            return <div key={shape.id}>
+            return <div className={styles.d} key={shape.id}>
               <Link
                 onClick={() => {
                   setIsActive(prev => !isActive)

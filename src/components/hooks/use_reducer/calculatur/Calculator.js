@@ -35,7 +35,7 @@ function Calculator() {
         <div className={styles.nresult} >
           {calculate.currentNum.length === 0 &&
             calculate.result === '0'
-            ? <span className={calculate.eq?styles.equal:styles.notequal} >{calculate.result}</span> : ''}
+            ? <span className={calculate.eq?calculate.result==='0'?styles.notequal:styles.equal:styles.notequal} >{calculate.result}</span> : ''}
           {calculate.currentNum.length > 0 && calculate.result >= 0 ? <span className={calculate.eq?styles.equal:styles.notequal} >={calculate.result}</span> : ''}
           {calculate.currentNum.length > 0 && calculate.result < 0 ? <span className={calculate.eq?styles.equal:styles.notequal} >({calculate.result})</span> : ''}
         </div>
