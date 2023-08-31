@@ -1,0 +1,10 @@
+.size{
+    background-color: #555;
+    font-size: 100%;
+}
+
+@media (max-width:100%) {
+    .size{
+        font-size: 90%;
+    }
+}

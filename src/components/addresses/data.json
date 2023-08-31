@@ -65,5 +65,12 @@
             "code": "https://github.com/ashrafabusunaina1986/nextlearn12/tree/gh-pages/src/app/hooks/useReducer"
           }
       ]
+    },
+    {
+      "id": 8,
+      "title": "Size",
+      "url": "/size",
+      "hook": null,
+      "code": "https://github.com/ashrafabusunaina1986/nextlearn12/tree/gh-pages/src/app/size"
     }
   ]
