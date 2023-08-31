@@ -10,10 +10,6 @@
     border-bottom-right-radius: 10px;
 }
 
-.links .d{
-    width:100%
-}
-
 .links a{
     display: inline-block;
     text-align: left;
@@ -32,7 +28,6 @@
     background-color: #8a8a8a;
 }
 .subTitle{
-    font-size: 90%;
     width: 100%;
     height: max-content;
     background-color: rgb(35,30,30);

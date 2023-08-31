@@ -12,7 +12,7 @@ function Addresses(props) {
       {
         shapes.map(shape => {
           if (shape.hook) {
-            return <div className={styles.d} key={shape.id}>
+            return <div  key={shape.id}>
               <Link
                 onClick={() => {
                   setIsActive(prev => !isActive)
