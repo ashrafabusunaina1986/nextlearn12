@@ -40,29 +40,3 @@
     display: none;
 }
 
-@media (max-width:1500px){
-    .links a{
-        font-size: 70%;
-    }
-}
-
-@media (max-width:1500px){
-    .links a{
-        font-size: 70%;
-    }
-}
-@media (max-width:1000px){
-    .links a{
-        font-size: 60%;
-    }
-}
-@media (max-width:800px){
-    .links a{
-        font-size: 50%;
-    }
-}
-@media (max-width:500px){
-    .links a{
-        font-size: 40%;
-    }
-}
