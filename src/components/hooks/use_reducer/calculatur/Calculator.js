@@ -1,15 +1,16 @@
 'use client'
 import React, { useEffect, useReducer } from 'react'
 import styles from './calculator.module.css'
-import { initial, reducer, rdelel, cdelel, OperandCurrentNum, Operand, isOperand, CurrentNum, Result } from '@/methods/calculator/Methods'
+import { initial, reducer, Operand} from '@/methods/calculator/Methods'
 
 
 
 function Calculator() {
   const [calculate, dispatch] = useReducer(reducer, initial)
   useEffect(() => {
-    console.log(calculate,Operand(calculate))
+    console.log(calculate)
   })
+  
   const number = e => {
     dispatch({ payload: e.target.value, type: 'n' })
   }
@@ -29,14 +30,14 @@ function Calculator() {
     <div className={styles.calculator}>
       <div className={styles.result} >
         <div className={styles.oresult}>
-          <span>{calculate.currentNum}</span>
+          <span className={calculate.eq?styles.notequal:styles.equal}>{calculate.currentNum}</span>
         </div>
         <div className={styles.nresult} >
           {calculate.currentNum.length === 0 &&
             calculate.result === '0'
-            ? <span>{calculate.result}</span> : ''}
-          {calculate.currentNum.length > 0 && calculate.result >= 0 ? <span>={calculate.result}</span> : ''}
-          {calculate.currentNum.length > 0 && calculate.result < 0 ? <span>({calculate.result})</span> : ''}
+            ? <span className={calculate.eq?styles.equal:styles.notequal} >{calculate.result}</span> : ''}
+          {calculate.currentNum.length > 0 && calculate.result >= 0 ? <span className={calculate.eq?styles.equal:styles.notequal} >={calculate.result}</span> : ''}
+          {calculate.currentNum.length > 0 && calculate.result < 0 ? <span className={calculate.eq?styles.equal:styles.notequal} >({calculate.result})</span> : ''}
         </div>
       </div>
       <button onClick={delall} className={styles.span1}>AC</button>
