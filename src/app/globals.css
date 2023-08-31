@@ -33,33 +33,3 @@ html,body{
 .children{
   width: 100%;
 }
-@media (max-width:1700px){
-  .children{
-      font-size: 100%;
-  }
-}
-@media (max-width:1400px){
-  .children{
-      font-size: 90%;
-  }
-}
-@media (max-width:1100px){
-  .children{
-      font-size: 80%;
-  }
-}
-@media (max-width:800px){
-  .children{
-      font-size: 70%;
-  }
-}
-@media (max-width:500px){
-  .children{
-      font-size: 65%;
-  }
-}
-@media (max-width:200px){
-  .children{
-      font-size: 50%;
-  }
-}
