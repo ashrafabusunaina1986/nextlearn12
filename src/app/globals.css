@@ -51,7 +51,7 @@ html,body{
 }
 @media (max-width:200px){
   body{
-      font-size: 60%;
+      font-size: 50%;
   }
 }
 .content{
