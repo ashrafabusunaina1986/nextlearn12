@@ -1,7 +1,7 @@
 .container{
     border: 1px solid #fff;
     width: 90%;
-    height: 100px;
+    height: max-content;
     margin: 1em auto;
     padding: 1.5em;
     background-color: #555;
