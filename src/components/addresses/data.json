@@ -61,8 +61,8 @@
         {
             "id": 3,
             "title": "useContext",
-            "url": "/hooks/useReducer",
-            "code": "https://github.com/ashrafabusunaina1986/nextlearn12/tree/gh-pages/src/app/hooks/useReducer"
+            "url": "/hooks/useContext",
+            "code": "https://github.com/ashrafabusunaina1986/nextlearn12/tree/gh-pages/src/app/hooks/useContext"
           }
       ]
     },
