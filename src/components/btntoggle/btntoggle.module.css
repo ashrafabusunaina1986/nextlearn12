@@ -1,0 +1,52 @@
+.container {
+    width: 10%;
+    height: 20px;
+    border-radius: 30px;
+    margin: auto;
+    border: 1px solid #ffa600;
+    position: relative;
+    cursor: pointer;
+}
+
+.floor {
+    height: 100%;
+    width: 100%;
+    background-color: #e9cac2;
+    border-radius: inherit;
+    border: inherit;
+    margin: auto;
+    display: flex;
+    position: relative;
+}
+
+.blue,
+.black {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.black {
+    left: 0;
+    background-color: #000;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.blue {
+    right: 0;
+    background-color: #00f;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.btn {
+    height: 16px;
+    position: absolute;
+    top: 1px;
+    width: 60%;
+    border-radius: inherit;
+    background-color: #ff3700;
+    margin: 0 1px;
+}

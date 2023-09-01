@@ -1,3 +1,10 @@
 .container{
     width: 100%;
 }
+
+.box{
+    width: 20%;
+    height: 100px;
+    border: 1px solid #eee;
+    margin: 20px auto;
+}
