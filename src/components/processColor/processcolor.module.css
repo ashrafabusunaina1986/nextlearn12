@@ -1,0 +1,27 @@
+.container {
+    width: 30%;
+    height: 15px;
+    border-radius: 30px;
+    margin: 50px auto;
+    border: 1px solid #ffa600;
+    position: relative;
+}
+
+.floor {
+    height: 100%;
+    width: 100%;
+    background-color: #cecece;
+    border-radius: inherit;
+    border: inherit;
+    margin: auto;
+}
+.btn {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    width: 10%;
+    left: 0;
+    border-radius: inherit;
+    margin: 0 1px;
+    cursor: pointer;
+}

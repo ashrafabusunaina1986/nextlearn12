@@ -5,6 +5,8 @@ import { Inter } from 'next/font/google'
 import Header from '@/components/header/Header'
 import Footer from '@/components/footer/Footer'
 import Code from '@/components/code/Code'
+import { ToggleContext } from '@/context/toggleContext/ToggleContext'
+import Color_Context from '@/context/colorcontext/Color_Context'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,18 +26,19 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className='container'>
           <Header />
-          <div className='content' >
-            <Addresses />
-            <div className='children'>
-              {children}
-              <Code />
-            </div>
-
-
-          </div>
+          <ToggleContext>
+            <Color_Context>
+              <div className='content' >
+                <Addresses />
+                <div className='children'>
+                  {children}
+                  <Code />
+                </div>
+              </div>
+            </Color_Context>
+          </ToggleContext>
           <Footer />
         </div>
-
       </body>
     </html>
   )

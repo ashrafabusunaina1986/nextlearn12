@@ -22,7 +22,12 @@ html,body{
   color: #e1eeeb;
   background-color: #241c1c;
 }
-
+.black{
+  right: 0;
+}
+.blue{
+  left: 0;
+}
 
 .content{
   display: flex;
