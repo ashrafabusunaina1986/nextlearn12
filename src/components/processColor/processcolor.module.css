@@ -10,7 +10,7 @@
 .floor {
     height: 100%;
     width: 100%;
-    background-color: #cecece;
+    background-color: hsl(0, 0%, 81%);
     border-radius: inherit;
     border: inherit;
     margin: auto;
@@ -20,8 +20,11 @@
     height: 100%;
     top: 0;
     width: 10%;
-    left: 0;
+    left: 0%;
     border-radius: inherit;
     margin: 0 1px;
     cursor: pointer;
+}
+.f{
+    color:hsl(240,90%,50%)
 }
